@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="header-banner">
         <div class="header-banner-logo-container-other-pages"
             ><a href="../../index.html" id="logo"
-                ><img src="../../assets/logo2.png" alt="logo" /></a
+                ><img src="./assets/logo2.png" alt="logo" /></a
         ></div>
 
         <nav id="nav" class="nav-other-pages">
