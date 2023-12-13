@@ -1,0 +1,42 @@
+// .engagements-img-container {
+//     width: 400px;
+//     margin: 16px 24px 16px 0;
+//     justify-self: center;
+//     border-radius: 20px;
+
+//     & img {
+//         width: 100%;
+//         border-radius: 20px;
+//     }
+// }
+
+// .engagements-list-item {
+//     display: grid;
+//     grid-template-columns: 1fr 2fr;
+//     align-items: center;
+//     margin-bottom: 10px;
+// }
+
+// .text-content {
+//     text-align: left;
+//     padding-right: 10px;
+// }
+
+.engagements-img-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 24px 0; // justify-self: center;
+    border-radius: 20px;
+    column-gap: 16px;
+
+    & img {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+figcaption {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+}
