@@ -1,6 +1,7 @@
 header {
     width: 100%;
-    padding: 0 32px;
+    // padding: 0 32px;
+    position: relative;
 }
 
 .header-homepage {
@@ -21,8 +22,10 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 16px 0;
+    position: relative;
 
     &-logo-container {
+        margin: 0 32px;
         width: 120px;
         & img {
             width: 100%;
@@ -56,20 +59,40 @@ header {
 }
 
 nav {
+    padding: 0 32px;
+    // position: relative;
     & ul {
         display: flex;
-        // justify-content: space-between;
+        align-items: center;
         list-style-type: none;
         column-gap: 36px;
         & .dropdown-menu {
             &-content {
                 display: none;
                 transition: display 0.3s;
+                flex-direction: column;
+                list-style-type: none;
+                position: absolute;
+                transition: display 1s;
+                padding-top: 8px;
+                align-items: start;
+                & li a {
+                    font-family: 'Merriweather Sans', sans-serif;
+                    font-size: 16px;
+                    color: #ffffff;
+                    text-decoration: none;
+                    padding: 1rem 0.5rem;
+                    line-height: 2rem;
+                    cursor: pointer;
+                    &:hover {
+                        text-shadow: 0 0 10px #ffffff;
+                    }
+                }
                 &:hover {
                     display: flex;
                 }
             }
-            & a {
+            &-title {
                 color: #ffffff;
                 text-decoration: none;
                 font-size: 24px;
@@ -84,29 +107,138 @@ nav {
             }
         }
     }
-
-    .dropdown-menu-content {
-        display: none;
-        flex-direction: column;
-        list-style-type: none;
-        position: absolute;
-        // width: max-content;
-        transition: display 1s;
-        & li a {
-            // font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-family: 'Merriweather Sans', sans-serif;
-            font-size: 16px;
-        }
-        padding: 1rem 0.5rem;
-        line-height: 2rem;
-        cursor: pointer;
-    }
 }
+// .dropdown-menu-content {
+//     // flex-direction: column;
+//     // list-style-type: none;
+//     // position: absolute;
+//     // transition: display 1s;
+//     // padding-top: 8px;
+//     // & li a {
+//     //     font-family: 'Merriweather Sans', sans-serif;
+//     //     font-size: 16px;
+//     //     color: #ffffff;
+//     //     text-decoration: none;
+//     //     padding: 1rem 0.5rem;
+//     //     line-height: 2rem;
+//     //     cursor: pointer;
+//     //     &:hover {
+//     //         text-shadow: 0 0 10px #ffffff;
+//     //     }
+//     // }
+// }
 
 .nav-other-pages {
-    margin-bottom: 36px;
     .dropdown-menu-content {
         background-color: #0d3b5b;
         border-radius: 16px;
+    }
+}
+
+.top-bar-homepage {
+    display: none;
+    justify-content: space-between;
+    padding: 8px 8px;
+    align-items: center;
+    column-gap: 16px;
+    // background-color: #0a2f44;
+    background-color: #0d3b5b;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-other-pages .top-bar-homepage {
+    display: none;
+}
+
+.top-bar-logo-container {
+    display: none;
+    width: 48px;
+    & img {
+        width: 100%;
+    }
+}
+
+.close-menu {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 10;
+    color: white;
+    font-size: 36px;
+    display: none;
+}
+
+.menu-burger {
+    // display: none;
+    display: flex;
+    column-gap: 16px;
+    cursor: pointer;
+    // &:hover {
+    //     text-shadow: 0 0 10px #ffffff;
+    // }
+    & i,
+    p {
+        color: white;
+        align-self: center;
+    }
+    & i {
+        font-size: 32px;
+    }
+    & p {
+        font-size: 16px;
+        font-family: 'Merriweather Sans', sans-serif;
+    }
+}
+
+.dropdown-menu-content.visible {
+    display: flex;
+}
+
+@media screen and (max-width: 1080px) {
+    .header-banner {
+        padding: 0;
+    }
+    .top-bar-homepage {
+        display: flex;
+    }
+    .header-other-pages .top-bar-homepage {
+        display: flex;
+    }
+    .top-bar-logo-container {
+        display: flex;
+    }
+    .header-banner-logo-container {
+        display: none;
+    }
+    .header-banner-title-container {
+        padding-top: 48px;
+    }
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #0d3b5b;
+        width: 100%;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        & ul {
+            flex-direction: column;
+            row-gap: 16px;
+            align-items: center;
+            & .dropdown-menu-content {
+                background-color: #0d3b5b;
+                left: 50%;
+                transform: translate(-50%);
+                width: 100%;
+                align-items: center;
+            }
+        }
     }
 }

@@ -14,15 +14,70 @@
     <body>
         <div id="main-container">
             <header class="header-homepage">
+                <!-- <div class="top-bar-other-pages">
+                    <div class="top-bar-1">
+                        <div class="top-bar-logo-container"
+                            ><a href="index.html" id="logo"
+                                ><img src="./assets/logo1.png" alt="logo"
+                            /></a>
+                        </div>
+                        <h1>Tour de l'Île d'Arz 2024</h1>
+                    </div>
+                    <div class="top-bar-2">
+                        <div class="menu-burger">
+                            <i class="fa-solid fa-bars"></i><p>MENU</p></div
+                        >
+                        <div class="social-icons"
+                            ><a href="#"
+                                ><i
+                                    class="fa-brands fa-facebook"
+                                    style="color: #ffffff"
+                                ></i
+                            ></a>
+                            <a href="#"
+                                ><i
+                                    class="fa-brands fa-instagram"
+                                    style="color: #ffffff"
+                                ></i></a
+                        ></div>
+                    </div>
+                </div> -->
+                <div class="top-bar-homepage">
+                    <div class="top-bar-logo-container"
+                        ><a href="index.html" id="logo"
+                            ><img src="./assets/logo1.png" alt="logo" /></a
+                    ></div>
+                    <div class="menu-burger"
+                        ><i class="fa-solid fa-bars"></i><p>MENU</p></div
+                    >
+                    <div class="social-icons"
+                        ><a href="#"
+                            ><i
+                                class="fa-brands fa-facebook"
+                                style="color: #ffffff"
+                            ></i
+                        ></a>
+                        <a href="#"
+                            ><i
+                                class="fa-brands fa-instagram"
+                                style="color: #ffffff"
+                            ></i></a></div
+                ></div>
                 <div class="header-banner">
+                    <button class="close-menu"
+                        ><i class="fa-solid fa-xmark" style="color: #ffffff"></i
+                    ></button>
+
                     <div class="header-banner-logo-container"
                         ><a href="index.html" id="logo"
                             ><img src="./assets/logo1.png" alt="logo" /></a
                     ></div>
-                    <nav id="nav">
+                    <nav class="nav-homepage">
                         <ul>
-                            <li class="dropdown-menu">
-                                <a href="#">L'Evénement</a>
+                            <li class="dropdown-menu clickable">
+                                <a class="dropdown-menu-title" href="#"
+                                    >L'Evénement</a
+                                >
                                 <ul class="dropdown-menu-content">
                                     <li
                                         ><a href="./presentation-course.html"
@@ -46,8 +101,10 @@
                                     >
                                 </ul>
                             </li>
-                            <li class="dropdown-menu">
-                                <a href="#">Informations pratiques</a>
+                            <li class="dropdown-menu clickable">
+                                <a class="dropdown-menu-title" href="#"
+                                    >Informations pratiques</a
+                                >
                                 <ul class="dropdown-menu-content">
                                     <li
                                         ><a href="./comment-venir.html"
@@ -72,8 +129,10 @@
                                     >
                                 </ul>
                             </li>
-                            <li class="dropdown-menu">
-                                <a href="#">S'inscrire</a>
+                            <li class="dropdown-menu clickable">
+                                <a class="dropdown-menu-title" href="#"
+                                    >S'inscrire</a
+                                >
                                 <ul class="dropdown-menu-content">
                                     <li
                                         ><a href="#"
@@ -89,8 +148,10 @@
                                     >
                                 </ul>
                             </li>
-                            <li class="dropdown-menu">
-                                <a href="#">Galerie</a>
+                            <li class="dropdown-menu clickable">
+                                <a class="dropdown-menu-title" href="#"
+                                    >Galerie</a
+                                >
                                 <ul class="dropdown-menu-content">
                                     <li><a href="./photos.html">Photos</a></li>
                                     <li><a href="./videos.html">Vidéos</a></li>
@@ -123,17 +184,17 @@
                 <div class="banner"></div>
             </header>
 
-            <main>
+            <main class="main-homepage">
                 <h2>Un petit aperçu du parcours ! </h2>
-                <iframe
-                    width="711"
-                    height="400"
-                    src="https://www.youtube.com/embed/aTtXY_1W8wk?si=E_8vz5ijhalEjT-H"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                ></iframe>
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/aTtXY_1W8wk?si=E_8vz5ijhalEjT-H"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                    ></iframe>
+                </div>
             </main>
             <footer> </footer>
         </div>
