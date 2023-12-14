@@ -1,5 +1,3 @@
-// @import url("https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
-
 @font-face {
     font-family: 'Edo';
     src: url('./Fonts/edo.ttf');
@@ -20,33 +18,35 @@
 
 body {
     display: flex;
+    // flex-direction: column;
     justify-content: center;
-    max-width: 1600px;
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
 }
 
-button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
+// button {
+//     border: none;
+//     background-color: transparent;
+//     cursor: pointer;
+// }
 
 #main-container {
-    max-width: 1600px;
+    max-width: 1920px;
     width: 100%;
     background-color: $background-color;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
+    flex: 1;
     background-color: #fff;
-    // height: 100vh;
     margin: 0;
     padding: 36px 144px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    // align-items: center;
 }
 
 footer {
@@ -64,9 +64,22 @@ footer {
     & p {
         font-size: 16px;
         color: #fff;
+    }
+    & .copyright {
         position: absolute;
         bottom: 16px;
+        font-size: 14px;
+        color: #fff;
     }
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
 }
 
 p {
@@ -74,10 +87,6 @@ p {
     margin: 8px 0;
     line-height: 1.5;
     text-align: left;
-}
-
-h2 {
-    text-align: center;
 }
 
 iframe {
@@ -101,11 +110,6 @@ iframe {
 .list {
     line-height: 1.5;
     list-style-position: inside;
-}
-
-h3 {
-    font-size: 24px;
-    margin-bottom: 16px;
 }
 
 .fa-brands {

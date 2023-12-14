@@ -161,5 +161,6 @@ document.addEventListener('DOMContentLoaded', function () {
         ></i
     ></a>
 </div>
-<p>© 2024 Tous droits réservés</p>`
+<p>contact : course@iledarz.org</p>
+<p class="copyright">© 2024 Tous droits réservés</p>`
 })
