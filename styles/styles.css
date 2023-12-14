@@ -445,6 +445,19 @@ iframe {
   .main-homepage {
     margin-top: 0;
   }
+  footer {
+    height: 120px;
+  }
+  footer div {
+    font-size: 16px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+  footer .copyright {
+    bottom: 8px;
+    font-size: 12px;
+  }
 }
 .banner {
   text-align: center;

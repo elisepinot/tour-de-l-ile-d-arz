@@ -143,4 +143,18 @@ iframe {
     .main-homepage {
         margin-top: 0;
     }
+
+    footer {
+        height: 120px;
+        & div {
+            font-size: 16px;
+        }
+        & p {
+            font-size: 14px;
+        }
+        & .copyright {
+            bottom: 8px;
+            font-size: 12px;
+        }
+    }
 }
