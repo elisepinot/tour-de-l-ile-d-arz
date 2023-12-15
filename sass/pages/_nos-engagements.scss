@@ -40,3 +40,20 @@ figcaption {
     font-size: 14px;
     font-style: italic;
 }
+
+@media screen and (max-width: $medium-screen) {
+    .engagements-img-container {
+        grid-template-columns: 1fr;
+        padding: 0 24px;
+        row-gap: 24px;
+    }
+}
+
+@media screen and (max-width: $small-screen) {
+    .engagements-img-container {
+        padding: 0;
+        & figcaption {
+            font-size: 12px;
+        }
+    }
+}

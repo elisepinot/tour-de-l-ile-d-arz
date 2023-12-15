@@ -1,6 +1,5 @@
 header {
     width: 100%;
-    // padding: 0 32px;
     position: relative;
 }
 
@@ -33,12 +32,12 @@ header {
     }
 }
 
-.header-banner-logo-container-other-pages {
-    width: 256px;
-    & img {
-        width: 100%;
-    }
-}
+// .header-banner-logo-container-other-pages {
+//     width: 256px;
+//     & img {
+//         width: 100%;
+//     }
+// }
 
 .header-banner-title-container {
     & h1 {
@@ -60,7 +59,6 @@ header {
 
 nav {
     padding: 0 32px;
-    // position: relative;
     & ul {
         display: flex;
         align-items: center;
@@ -108,25 +106,6 @@ nav {
         }
     }
 }
-// .dropdown-menu-content {
-//     // flex-direction: column;
-//     // list-style-type: none;
-//     // position: absolute;
-//     // transition: display 1s;
-//     // padding-top: 8px;
-//     // & li a {
-//     //     font-family: 'Merriweather Sans', sans-serif;
-//     //     font-size: 16px;
-//     //     color: #ffffff;
-//     //     text-decoration: none;
-//     //     padding: 1rem 0.5rem;
-//     //     line-height: 2rem;
-//     //     cursor: pointer;
-//     //     &:hover {
-//     //         text-shadow: 0 0 10px #ffffff;
-//     //     }
-//     // }
-// }
 
 .nav-other-pages {
     .dropdown-menu-content {
@@ -141,7 +120,6 @@ nav {
     padding: 8px 8px;
     align-items: center;
     column-gap: 16px;
-    // background-color: #0a2f44;
     background-color: #0d3b5b;
     position: absolute;
     top: 0;
@@ -149,8 +127,17 @@ nav {
     right: 0;
 }
 
-.header-other-pages .top-bar-homepage {
-    display: none;
+.header-other-pages {
+    background-color: #0d3b5b;
+    & .header-banner-logo-container {
+        width: 256px;
+    }
+    & .top-bar-homepage {
+        display: none;
+        & .top-bar-logo-container {
+            width: 96px;
+        }
+    }
 }
 
 .top-bar-logo-container {
@@ -172,13 +159,12 @@ nav {
 }
 
 .menu-burger {
-    // display: none;
     display: flex;
     column-gap: 16px;
     cursor: pointer;
-    // &:hover {
-    //     text-shadow: 0 0 10px #ffffff;
-    // }
+    &:hover {
+        text-shadow: 0 0 10px #ffffff;
+    }
     & i,
     p {
         color: white;
@@ -214,7 +200,7 @@ nav {
         display: none;
     }
     .header-banner-title-container {
-        padding-top: 48px;
+        padding: 48px 16px 16px 16px;
     }
     nav {
         position: absolute;

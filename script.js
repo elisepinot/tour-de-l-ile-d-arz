@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     header.innerHTML = ` <div class="top-bar-homepage">
     <div class="top-bar-logo-container"
-        ><a href="index.html" id="logo"
-            ><img src="./assets/logo1.png" alt="logo" /></a
+        ><a href="index.html" class="logo-top-bar"
+            ><img src="./assets/logo2.png" alt="logo" /></a
     ></div>
     <div class="menu-burger"
         ><i class="fa-solid fa-bars"></i><p>MENU</p></div
@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
     ></button>
 
     <div class="header-banner-logo-container"
-        ><a href="index.html" id="logo"
-            ><img src="./assets/logo1.png" alt="logo" /></a
+        ><a href="index.html" class="logo2"
+            ><img src="./assets/logo2.png" alt="logo" /></a
     ></div>
     <nav class="nav-other-pages">
         <ul>
@@ -239,17 +239,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // }
 })
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     const clickableItems = document.querySelectorAll('.clickable')
-
-//     clickableItems.forEach((item) => {
-//         item.addEventListener('click', function (event) {
-//             const submenu = this.querySelector('.dropdown-menu-content')
-//             submenu.style.display = 'flex'
-//         })
-//     })
-// })
-
+//Gestion de l'ouverture du menu-burger et des sous-menus
 document.addEventListener('DOMContentLoaded', function () {
     let activeSubmenu = null
 
@@ -294,18 +284,3 @@ document.addEventListener('DOMContentLoaded', function () {
             event.stopPropagation()
         })
 })
-
-// function resizeVideo() {
-//     var videoContainer = document.querySelector('.video-container')
-//     var iframe = document.querySelector('iframe')
-//     var aspectRatio = 16 / 9 // Change this to match your video's aspect ratio
-
-//     var containerWidth = videoContainer.offsetWidth
-//     var newHeight = containerWidth / aspectRatio
-
-//     iframe.style.height = newHeight + 'px'
-// }
-
-// // Appeler la fonction au chargement initial de la page et lors du redimensionnement de la fenêtre
-// window.addEventListener('load', resizeVideo)
-// window.addEventListener('resize', resizeVideo)
