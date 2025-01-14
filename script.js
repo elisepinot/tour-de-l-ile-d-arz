@@ -1,6 +1,6 @@
 //Homepage : animation de la date au chargement de la page
 function wordflick() {
-    const words = ['27 avril 2024']
+    const words = ['17 mai 2025']
     let i = 0
     const speed = 100
     const banner = document.querySelector('.banner')
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 style="color: #ffffff"
             ></i
         ></a>
-        <a href="#"
+        <a href="https://www.instagram.com/tourdeliledarz/"
             ><i
                 class="fa-brands fa-instagram"
                 style="color: #ffffff"
@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function () {
             style="color: #ffffff"
         ></i
     ></a>
-    <a href="#"
+    <a href="https://www.instagram.com/tourdeliledarz/"
         ><i
             class="fa-brands fa-instagram"
             style="color: #ffffff"
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ></a>
 </div>
 <p>contact : course@iledarz.org</p>
-<p class="copyright">© 2024 Tous droits réservés</p>`
+<p class="copyright">© 2025 Tous droits réservés</p>`
 })
 
 document.addEventListener('DOMContentLoaded', function () {

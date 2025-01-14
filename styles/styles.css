@@ -486,7 +486,8 @@ p {
 .banner {
   text-align: center;
   color: #f88051;
-  font: 700 normal 4em/1.5 "Merriweather Sans", sans-serif;
+  font-family: "Edo", sans-serif;
+  font-size: 72px;
   text-shadow: 4px 4px 36px white;
 }
 
