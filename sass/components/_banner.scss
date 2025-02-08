@@ -11,6 +11,20 @@
     text-shadow: 4px 4px 36px white;
 }
 
+.banner-logo-container {
+    padding-top: 80px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+    gap: 8px; /* Espace entre le texte et l'image */
+
+    & img {
+        width: 104px;
+    }
+}
+
 // #logo-other-pages {
 //     width: 240px;
 // }

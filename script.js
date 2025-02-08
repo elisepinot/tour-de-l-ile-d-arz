@@ -166,24 +166,57 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 //Chargement du contenu du footer pour toutes les pages
+// document.addEventListener('DOMContentLoaded', function () {
+//     const footer = document.querySelector('footer')
+//     footer.innerHTML = `<div>
+//     <a href="#"
+//         ><i
+//             class="fa-brands fa-facebook"
+//             style="color: #ffffff"
+//         ></i
+//     ></a>
+//     <a href="https://www.instagram.com/tourdeliledarz/"
+//         ><i
+//             class="fa-brands fa-instagram"
+//             style="color: #ffffff"
+//         ></i
+//     ></a>
+// </div>
+// <p>contact : pierre.briot.pb@gmail.com</p>
+// <p class="copyright">© 2025 Tous droits réservés</p>`
+// })
+
+//Option 2 footer avec partenaire
 document.addEventListener('DOMContentLoaded', function () {
     const footer = document.querySelector('footer')
-    footer.innerHTML = `<div>
-    <a href="#"
-        ><i
-            class="fa-brands fa-facebook"
-            style="color: #ffffff"
-        ></i
-    ></a>
-    <a href="https://www.instagram.com/tourdeliledarz/"
-        ><i
-            class="fa-brands fa-instagram"
-            style="color: #ffffff"
-        ></i
-    ></a>
-</div>
-<p>contact : course@iledarz.org</p>
-<p class="copyright">© 2025 Tous droits réservés</p>`
+    footer.innerHTML = `
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>Partenaire</h3>
+            <a href="https://www.gba-avocats.com/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/Logo-GBA-Blanc.png" alt="Logo GBA">
+            </a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Nos réseaux sociaux</h3>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/tourdeliledarz/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p>pierre.briot.pb@gmail.com</p>
+        </div>
+    </div>
+
+    <p class="copyright">© 2025 Tous droits réservés</p>`
 })
 
 document.addEventListener('DOMContentLoaded', function () {

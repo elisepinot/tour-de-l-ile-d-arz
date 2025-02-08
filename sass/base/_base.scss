@@ -49,27 +49,144 @@ main {
     flex-direction: column;
 }
 
+// footer {
+//     background-color: $background-color;
+//     height: 188px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     position: relative;
+//     padding-bottom: 16px;
+//     & div {
+//         font-size: 24px;
+//     }
+//     & p {
+//         font-size: 16px;
+//         color: #fff;
+//     }
+//     & .copyright {
+//         position: absolute;
+//         bottom: 16px;
+//         font-size: 14px;
+//         color: #fff;
+//     }
+// }
+
 footer {
     background-color: $background-color;
-    height: 188px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding-bottom: 16px;
-    & div {
-        font-size: 24px;
+    color: #fff;
+    text-align: center;
+    padding: 16px 12px 0 12px;
+
+    .footer-content {
+        display: flex;
+        //justify-content: space-between;
+        //align-items: center;
+        flex-wrap: wrap;
+        //max-width: 1000px;
+        margin: 0 auto;
+        gap: 16px;
     }
-    & p {
-        font-size: 16px;
-        color: #fff;
+
+    .footer-column {
+        flex: 1;
+        //min-width: 180px;
+        //text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        justify-content: space-between; // Espace entre le titre et le contenu
+        //justify-content: space-evenly;
+        height: 100%; // Permet à la colonne d'occuper toute la hauteur disponible
+        padding: 10px 0; // Ajuste l'espacement interne pour éviter que le contenu touche les bords
     }
-    & .copyright {
-        position: absolute;
-        bottom: 16px;
+
+    .footer-column h3 {
         font-size: 14px;
+        margin-bottom: 12px;
+        font-weight: normal;
         color: #fff;
+
+        text-align: center;
+        flex-grow: 0; // Le titre ne grandit pas, il reste en haut
+    }
+
+    .footer-column a,
+    .footer-column p,
+    .footer-social {
+        font-size: 12px;
+        text-decoration: none;
+        color: #fff;
+        // display: block;
+        // margin-top: 6px;
+        // text-align: center;
+
+        // display: flex;
+        // justify-content: center;
+        //align-items: end;
+    }
+
+    // .footer-column > * {
+    //     //width: 100%;
+
+    //     //display: flex;
+    //     //justify-content: center;
+    //     // align-items: center;
+    //     //flex-grow: 1; // Le contenu occupe l'espace restant
+    //     //margin-top: 8px; // Espacement entre le titre et le contenu
+    // }
+
+    .footer-column img {
+        height: 40px;
+        transition: transform 0.3s ease;
+    }
+
+    .footer-column a:hover img {
+        transform: scale(1.05);
+    }
+
+    // Icônes des réseaux sociaux plus grandes
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .footer-social a i {
+        color: #fff;
+        transition: transform 0.3s ease;
+    }
+
+    .footer-social a:hover i {
+        transform: scale(1.1);
+    }
+
+    // Mentions légales en blanc et légèrement plus grandes
+    .copyright {
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+        color: #fff;
+    }
+
+    // Version mobile
+    @media (max-width: 768px) {
+        .footer-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-column {
+            width: 100%;
+            margin-bottom: 12px;
+        }
+
+        .footer-social {
+            justify-content: center;
+        }
     }
 }
 
@@ -115,6 +232,7 @@ p {
 
 .fa-brands {
     margin: 0 8px;
+    font-size: 16px;
 }
 
 .video-container {
