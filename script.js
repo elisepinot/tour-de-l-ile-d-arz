@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <ul class="dropdown-menu-content">
                     <li
                         ><a href="./comment-venir.html"
-                            >Comment venir ?</a
+                            >Comment se rendre à l'île d'Arz ?</a
                         ></li
                     >
                     <li
@@ -121,11 +121,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 >
                 <ul class="dropdown-menu-content">
                     <li
-                        ><a href="#"
+                        ><a
+                            href="https://www.nextrun.fr/course/inscriptions-avis/sport/3838/tour-de-l-ile-d-arz/2025#:~:text=Rendez%2Dvous%20le%20samedi%2017,%C3%A0%2010h30%20pour%2010%20kilom%C3%A8tres%20!&text=L'association%20COURIR%20A%20L'ILE%20D'ARZ."
                             >Lien vers l'inscription</a
                         ></li
                     >
-                    <li><a href="#">Lien vers la bourse</a></li>
+                    <li
+                        ><a href="./bourse-dossards.html"
+                            >Lien vers la bourse</a
+                        ></li
+                        >
                     <li
                         ><a href="#"
                             >Lien vers la vérification

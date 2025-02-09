@@ -1,0 +1,12 @@
+.gba-logo {
+    display: block;
+    max-width: 200px; // Ajuste la taille maximale de l'image
+    width: 100%; // Permet une adaptation responsive
+    height: auto; // Garde les proportions de l'image
+    margin: 20px auto; // Centre l'image horizontalement
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1); // Effet de zoom au survol
+    }
+}
