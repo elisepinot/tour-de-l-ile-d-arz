@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         ><i class="fa-solid fa-bars"></i><p>MENU</p></div
     >
     <div class="social-icons"
-        ><a href="#"
+        ><a href="https://www.facebook.com/profile.php?id=61571407392167&mibextid=wwXIfr&rdid=eSiZlJlx5zLZSRn5&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15iQoT7ZXt%2F%3Fmibextid%3DwwXIfr#"
             ><i
                 class="fa-brands fa-facebook"
                 style="color: #ffffff"
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     >
                     <li
                         ><a href="./bourse-dossards.html"
-                            >Lien vers la bourse</a
+                            >Lien vers la bourse aux dossards</a
                         ></li
                         >
                     <li
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
             </li>
             <li class="dropdown-menu">
                 <div>
-                    <a href="#"
+                    <a href="https://www.facebook.com/profile.php?id=61571407392167&mibextid=wwXIfr&rdid=eSiZlJlx5zLZSRn5&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15iQoT7ZXt%2F%3Fmibextid%3DwwXIfr#"
                         ><i
                             class="fa-brands fa-facebook"
                             style="color: #ffffff"
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <a href="https://www.instagram.com/tourdeliledarz/" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://www.facebook.com/profile.php?id=61571407392167&mibextid=wwXIfr&rdid=eSiZlJlx5zLZSRn5&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15iQoT7ZXt%2F%3Fmibextid%3DwwXIfr#" target="_blank">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
             </div>
@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         <div class="footer-column">
             <h3>Contact</h3>
-            <p>pierre.briot.pb@gmail.com</p>
+            <p>course@iledarz.org</p>
         </div>
     </div>
 
@@ -321,4 +321,60 @@ document.addEventListener('DOMContentLoaded', function () {
         .addEventListener('click', function (event) {
             event.stopPropagation()
         })
+})
+
+//Gestion de la lightbox
+document.addEventListener('DOMContentLoaded', () => {
+    let currentIndex = 0
+    const images = document.querySelectorAll('.gallery img')
+    const lightbox = document.getElementById('lightbox')
+    const lightboxImg = document.getElementById('lightbox-img')
+    const closeBtn = document.querySelector('.close-btn')
+    const nextBtn = document.querySelector('.next-btn')
+    const prevBtn = document.querySelector('.prev-btn')
+
+    if (images.length === 0) {
+        console.error('Aucune image trouvée dans .gallery !')
+        return
+    }
+
+    // Ouvrir la lightbox au clic sur une image
+    images.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            currentIndex = index
+            updateLightbox()
+            lightbox.classList.add('active')
+        })
+    })
+
+    // Mettre à jour l'image affichée
+    function updateLightbox() {
+        lightboxImg.src = images[currentIndex].src
+    }
+
+    // Changer d'image
+    function changeImage(direction) {
+        currentIndex =
+            (currentIndex + direction + images.length) % images.length
+        updateLightbox()
+    }
+
+    // Fermer la lightbox
+    function closeLightbox() {
+        lightbox.classList.remove('active')
+    }
+
+    // Événements pour naviguer
+    nextBtn.addEventListener('click', () => changeImage(1))
+    prevBtn.addEventListener('click', () => changeImage(-1))
+    closeBtn.addEventListener('click', closeLightbox)
+
+    // Navigation au clavier
+    document.addEventListener('keydown', (e) => {
+        if (lightbox.classList.contains('active')) {
+            if (e.key === 'ArrowRight') changeImage(1)
+            if (e.key === 'ArrowLeft') changeImage(-1)
+            if (e.key === 'Escape') closeLightbox()
+        }
+    })
 })
