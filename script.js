@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function () {
     footer.innerHTML = `
     <div class="footer-content">
         <div class="footer-column">
-            <h3>Partenaire principal !</h3>
+            <h3>Partenaire principal</h3>
             <a href="https://www.gba-avocats.com/" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/Logo-GBA-Blanc.png" alt="Logo GBA">
             </a>
