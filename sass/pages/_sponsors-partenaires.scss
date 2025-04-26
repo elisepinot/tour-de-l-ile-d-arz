@@ -1,12 +1,78 @@
 .gba-logo {
     display: block;
-    max-width: 200px; // Ajuste la taille maximale de l'image
+    max-width: 300px; // Ajuste la taille maximale de l'image
     width: 100%; // Permet une adaptation responsive
     height: auto; // Garde les proportions de l'image
     margin: 20px auto; // Centre l'image horizontalement
     transition: transform 0.3s ease-in-out;
 
+    flex-shrink: 0;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    background-color: white;
+    padding: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
     &:hover {
         transform: scale(1.1); // Effet de zoom au survol
+    }
+}
+
+.partner-intro {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.partner-title {
+    margin-top: 3rem; // ou ajuste selon ton besoin (ex : 5rem)
+    font-size: 2rem;
+    text-align: center;
+}
+
+.partner {
+    display: flex;
+    // align-items: flex-start;
+    align-items: center; // changement ici pour centrer verticalement
+    gap: 1.5rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+
+    .partner-logo {
+        flex-shrink: 0;
+        max-width: 150px;
+        height: auto;
+        object-fit: contain;
+        border-radius: 0.5rem;
+        background-color: white;
+        padding: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1); // Effet de zoom au survol
+        }
+    }
+
+    p {
+        flex: 1;
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .partner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .partner-logo {
+            max-width: 120px;
+        }
+
+        p {
+            margin-top: 1rem;
+        }
     }
 }
