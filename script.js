@@ -85,6 +85,12 @@ document.addEventListener('DOMContentLoaded', function () {
                             >Nos sponsors et partenaires</a
                         ></li
                     >
+                    <li
+                                        ><a
+                                            href="https://www.sportinnovation.fr/Evenements/Resultats/7052"
+                                            >Résultats 2025</a
+                                        ></li
+                                    >
                 </ul>
             </li>
             <li class="dropdown-menu clickable">

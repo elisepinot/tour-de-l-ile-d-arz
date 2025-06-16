@@ -620,6 +620,7 @@ nav ul .dropdown-menu-content {
   transition: display 1s;
   padding-top: 8px;
   align-items: start;
+  background-color: #0d3b5b;
 }
 nav ul .dropdown-menu-content li a {
   font-family: "Merriweather Sans", sans-serif;
@@ -642,9 +643,11 @@ nav ul .dropdown-menu-title {
   font-size: 24px;
   font-family: "Edo", sans-serif;
   transition: all 0.3s;
+  background-color: #0d3b5b;
 }
 nav ul .dropdown-menu-title:hover {
   text-shadow: 0 0 10px #ffffff;
+  background-color: #0d3b5b;
 }
 nav ul .dropdown-menu-title:hover + .dropdown-menu-content {
   display: flex;
@@ -975,6 +978,34 @@ h2 .fa-truck {
 
 .gallery img {
   max-width: 100%;
+}
+
+.edition-link {
+  display: block;
+  width: fit-content;
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: bold;
+  color: #0d3b5b;
+  text-decoration: none;
+  position: relative;
+}
+.edition-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: #0d3b5b;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.edition-link:hover::after {
+  transform: scaleX(1);
 }
 
 /*# sourceMappingURL=styles.css.map */

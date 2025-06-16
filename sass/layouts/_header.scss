@@ -74,6 +74,7 @@ nav {
                 transition: display 1s;
                 padding-top: 8px;
                 align-items: start;
+                background-color: #0d3b5b;
                 & li a {
                     font-family: 'Merriweather Sans', sans-serif;
                     font-size: 16px;
@@ -96,8 +97,11 @@ nav {
                 font-size: 24px;
                 font-family: 'Edo', sans-serif;
                 transition: all 0.3s;
+                background-color: #0d3b5b;
                 &:hover {
                     text-shadow: 0 0 10px #ffffff;
+                    background-color: #0d3b5b;
+
                     & + .dropdown-menu-content {
                         display: flex;
                     }
