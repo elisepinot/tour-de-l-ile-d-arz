@@ -68,12 +68,67 @@
                     s’il vous plaît, rapportez vos déchets sur le continent.</p
                 >
                 <p>Tous ensemble, prenons soin de l’Ile d’Arz ! </p>
-                <div class="map-container">
-                    <a href="./assets/carte-ile-d-arz.pdf"
-                        ><img
-                            src="./assets/carte-ile-d-arz.png"
-                            alt="Carte de l'Île d'Arz"
-                    /></a>
+                <div class="map-gallery">
+                    <div class="map-container">
+                        <a href="./assets/carte-ile-d-arz.pdf"
+                            ><img
+                                src="./assets/carte-ile-d-arz.png"
+                                alt="Carte de l'Île d'Arz"
+                        /></a>
+                    </div>
+                    <div class="gallery-section">
+                        <div class="gallery">
+                            <img
+                                src="./assets/photo-1.jpg"
+                                alt="Photo 1"
+                                onclick="openLightbox(this)"
+                            />
+                            <img
+                                src="./assets/photo-2.jpg"
+                                alt="Photo 2"
+                                onclick="openLightbox(this)"
+                            />
+                            <img
+                                src="./assets/photo-3.jpg"
+                                alt="Photo 3"
+                                onclick="openLightbox(this)"
+                            />
+                            <img
+                                src="./assets/photo-4.jpg"
+                                alt="Photo 4"
+                                onclick="openLightbox(this)"
+                            />
+                            <img
+                                src="./assets/photo-5.jpg"
+                                alt="Photo 5"
+                                onclick="openLightbox(this)"
+                            />
+                            <img
+                                src="./assets/photo-6.jpg"
+                                alt="Photo 6"
+                                onclick="openLightbox(this)"
+                            />
+                            <img
+                                src="./assets/photo-7.jpg"
+                                alt="Photo 7"
+                                onclick="openLightbox(this)"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lightbox -->
+                <div id="lightbox" class="lightbox">
+                    <span class="close-btn" onclick="closeLightbox()"
+                        >&times;</span
+                    >
+                    <span class="prev-btn" onclick="changeImage(-1)"
+                        >&#10094;</span
+                    >
+                    <img id="lightbox-img" src="" alt="Agrandissement" />
+                    <span class="next-btn" onclick="changeImage(1)"
+                        >&#10095;</span
+                    >
                 </div>
             </main>
             <footer> </footer>

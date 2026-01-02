@@ -774,8 +774,8 @@ nav ul .dropdown-menu-title:hover + .dropdown-menu-content {
 }
 .map-container {
   margin: 24px 0;
-  width: 600px;
-  align-self: center;
+  width: 100%;
+  max-width: 600px;
 }
 .map-container img {
   width: 100%;
@@ -785,6 +785,17 @@ nav ul .dropdown-menu-title:hover + .dropdown-menu-content {
   .map-container {
     width: 100%;
   }
+}
+.map-gallery {
+  display: block;
+  margin: 24px 0;
+}
+.map-gallery .map-container {
+  margin: 0 auto 16px;
+}
+.map-gallery .gallery-section {
+  width: 100%;
+  max-width: 100%;
 }
 .engagements-img-container {
   display: grid;

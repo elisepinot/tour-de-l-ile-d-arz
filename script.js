@@ -1,6 +1,6 @@
 //Homepage : animation de la date au chargement de la page
 function wordflick() {
-    const words = ['17 mai 2025']
+    const words = ['23 mai 2026']
     let i = 0
     const speed = 100
     const banner = document.querySelector('.banner')
